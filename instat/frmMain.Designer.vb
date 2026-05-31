@@ -231,6 +231,7 @@ Partial Class frmMain
         Me.mnuClimaticTidyandExamineTidyDailyData = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator71 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuClimaticTidyandExamineReplaceValues = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InsertColumnRowsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClimaticTidyandExamineDuplicateRows = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClimaticTidyandExamineNonNumericCases = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator54 = New System.Windows.Forms.ToolStripSeparator()
@@ -308,7 +309,6 @@ Partial Class frmMain
         Me.mnuClimaticPICSA = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClimaticPICSARainfallGraph = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClimaticPICSATemperatureGraph = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuClimaticPICSAGeneralGrap = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator73 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuClimaticPICSACumExeedenceGraph = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClimaticPICSACrops = New System.Windows.Forms.ToolStripMenuItem()
@@ -821,18 +821,18 @@ Partial Class frmMain
         'mnuDescribeOneVariableVisualiseData
         '
         Me.mnuDescribeOneVariableVisualiseData.Name = "mnuDescribeOneVariableVisualiseData"
-        Me.mnuDescribeOneVariableVisualiseData.Size = New System.Drawing.Size(270, 34)
+        Me.mnuDescribeOneVariableVisualiseData.Size = New System.Drawing.Size(235, 34)
         Me.mnuDescribeOneVariableVisualiseData.Text = "Visualise Data..."
         '
         'ToolStripSeparator72
         '
         Me.ToolStripSeparator72.Name = "ToolStripSeparator72"
-        Me.ToolStripSeparator72.Size = New System.Drawing.Size(267, 6)
+        Me.ToolStripSeparator72.Size = New System.Drawing.Size(232, 6)
         '
         'mnuDescribeOneVariableSummarise
         '
         Me.mnuDescribeOneVariableSummarise.Name = "mnuDescribeOneVariableSummarise"
-        Me.mnuDescribeOneVariableSummarise.Size = New System.Drawing.Size(270, 34)
+        Me.mnuDescribeOneVariableSummarise.Size = New System.Drawing.Size(235, 34)
         Me.mnuDescribeOneVariableSummarise.Tag = "Summarise..."
         Me.mnuDescribeOneVariableSummarise.Text = "Summarise..."
         Me.mnuDescribeOneVariableSummarise.ToolTipText = "One Variable Summarise, Skim and Customised"
@@ -840,34 +840,33 @@ Partial Class frmMain
         'mnuDescribeOneVariableGraph
         '
         Me.mnuDescribeOneVariableGraph.Name = "mnuDescribeOneVariableGraph"
-        Me.mnuDescribeOneVariableGraph.Size = New System.Drawing.Size(270, 34)
+        Me.mnuDescribeOneVariableGraph.Size = New System.Drawing.Size(235, 34)
         Me.mnuDescribeOneVariableGraph.Tag = "Graph..."
         Me.mnuDescribeOneVariableGraph.Text = "Graph..."
         '
         'ToolStripSeparator33
         '
         Me.ToolStripSeparator33.Name = "ToolStripSeparator33"
-        Me.ToolStripSeparator33.Size = New System.Drawing.Size(267, 6)
+        Me.ToolStripSeparator33.Size = New System.Drawing.Size(232, 6)
         '
         'mnuDescribeOneVariableFrequencies
         '
         Me.mnuDescribeOneVariableFrequencies.Name = "mnuDescribeOneVariableFrequencies"
-        Me.mnuDescribeOneVariableFrequencies.Size = New System.Drawing.Size(270, 34)
+        Me.mnuDescribeOneVariableFrequencies.Size = New System.Drawing.Size(235, 34)
         Me.mnuDescribeOneVariableFrequencies.Text = "Frequencies..."
         Me.mnuDescribeOneVariableFrequencies.ToolTipText = "Table or Graph. Also Stem and Leaf Plots"
         '
         'mnuDescribeOneVariableRatingData
         '
         Me.mnuDescribeOneVariableRatingData.Name = "mnuDescribeOneVariableRatingData"
-        Me.mnuDescribeOneVariableRatingData.Size = New System.Drawing.Size(270, 34)
+        Me.mnuDescribeOneVariableRatingData.Size = New System.Drawing.Size(235, 34)
         Me.mnuDescribeOneVariableRatingData.Text = "Rating Data..."
         Me.mnuDescribeOneVariableRatingData.ToolTipText = "Table, Stacked Graph or Likert Graph"
         '
         'mnuDescribeOneVariableLikertGraphs
         '
-        Me.mnuDescribeOneVariableLikertGraphs.Enabled = False
         Me.mnuDescribeOneVariableLikertGraphs.Name = "mnuDescribeOneVariableLikertGraphs"
-        Me.mnuDescribeOneVariableLikertGraphs.Size = New System.Drawing.Size(270, 34)
+        Me.mnuDescribeOneVariableLikertGraphs.Size = New System.Drawing.Size(235, 34)
         Me.mnuDescribeOneVariableLikertGraphs.Text = "Likert Graphs..."
         '
         'mnuDescribeTwoThreeVariables
@@ -2214,7 +2213,7 @@ Partial Class frmMain
         '
         'mnuClimaticTidyandExamine
         '
-        Me.mnuClimaticTidyandExamine.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClimaticTidyandExamineTidyDailyData, Me.ToolStripSeparator71, Me.mnuClimaticTidyandExamineReplaceValues, Me.mnuClimaticTidyandExamineDuplicateRows, Me.mnuClimaticTidyandExamineNonNumericCases, Me.ToolStripSeparator54, Me.mnuClimaticTidyandExamineTransformText, Me.mnuClimaticTidyandExamineSplitText, Me.ToolStripSeparator80, Me.mnuClimaticTidyandExamineStack, Me.mnuClimaticTidyandExamineUnstack, Me.mnuClimaticTidyandExamineMerge, Me.mnuClimaticTidyandExamineAppend, Me.ToolStripSeparator69, Me.mnuClimaticTidyDataKey})
+        Me.mnuClimaticTidyandExamine.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClimaticTidyandExamineTidyDailyData, Me.ToolStripSeparator71, Me.mnuClimaticTidyandExamineReplaceValues, Me.InsertColumnRowsToolStripMenuItem, Me.mnuClimaticTidyandExamineDuplicateRows, Me.mnuClimaticTidyandExamineNonNumericCases, Me.ToolStripSeparator54, Me.mnuClimaticTidyandExamineTransformText, Me.mnuClimaticTidyandExamineSplitText, Me.ToolStripSeparator80, Me.mnuClimaticTidyandExamineStack, Me.mnuClimaticTidyandExamineUnstack, Me.mnuClimaticTidyandExamineMerge, Me.mnuClimaticTidyandExamineAppend, Me.ToolStripSeparator69, Me.mnuClimaticTidyDataKey})
         Me.mnuClimaticTidyandExamine.Name = "mnuClimaticTidyandExamine"
         Me.mnuClimaticTidyandExamine.Size = New System.Drawing.Size(325, 34)
         Me.mnuClimaticTidyandExamine.Text = "Tidy Data"
@@ -2235,6 +2234,12 @@ Partial Class frmMain
         Me.mnuClimaticTidyandExamineReplaceValues.Name = "mnuClimaticTidyandExamineReplaceValues"
         Me.mnuClimaticTidyandExamineReplaceValues.Size = New System.Drawing.Size(301, 34)
         Me.mnuClimaticTidyandExamineReplaceValues.Text = "Replace Values..."
+        '
+        'InsertColumnRowsToolStripMenuItem
+        '
+        Me.InsertColumnRowsToolStripMenuItem.Name = "InsertColumnRowsToolStripMenuItem"
+        Me.InsertColumnRowsToolStripMenuItem.Size = New System.Drawing.Size(301, 34)
+        Me.InsertColumnRowsToolStripMenuItem.Text = "Insert Column/Rows..."
         '
         'mnuClimaticTidyandExamineDuplicateRows
         '
@@ -2701,7 +2706,7 @@ Partial Class frmMain
         '
         'mnuClimaticPICSA
         '
-        Me.mnuClimaticPICSA.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClimaticPICSARainfallGraph, Me.mnuClimaticPICSATemperatureGraph, Me.mnuClimaticPICSAGeneralGrap, Me.ToolStripSeparator73, Me.mnuClimaticPICSACumExeedenceGraph, Me.mnuClimaticPICSACrops})
+        Me.mnuClimaticPICSA.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClimaticPICSARainfallGraph, Me.mnuClimaticPICSATemperatureGraph, Me.ToolStripSeparator73, Me.mnuClimaticPICSACumExeedenceGraph, Me.mnuClimaticPICSACrops})
         Me.mnuClimaticPICSA.Name = "mnuClimaticPICSA"
         Me.mnuClimaticPICSA.Size = New System.Drawing.Size(325, 34)
         Me.mnuClimaticPICSA.Text = "PICSA"
@@ -2726,6 +2731,7 @@ Partial Class frmMain
 >>>>>>> 94bb5de1eb05d577d5daf7a973c20f705fe0ba09
         Me.mnuClimaticPICSATemperatureGraph.Text = "Temperature Graph..."
         '
+<<<<<<< HEAD
         'mnuClimaticPICSAGeneralGrap
         '
         Me.mnuClimaticPICSAGeneralGrap.Name = "mnuClimaticPICSAGeneralGrap"
@@ -2736,6 +2742,8 @@ Partial Class frmMain
 >>>>>>> 94bb5de1eb05d577d5daf7a973c20f705fe0ba09
         Me.mnuClimaticPICSAGeneralGrap.Text = "General Graph..."
         '
+=======
+>>>>>>> ff8feaf3406f07bf64c9be2ca8179ca82209ec4f
         'ToolStripSeparator73
         '
         Me.ToolStripSeparator73.Name = "ToolStripSeparator73"
@@ -6102,7 +6110,7 @@ Partial Class frmMain
         Me.splOverall.Panel2.BackColor = System.Drawing.SystemColors.Control
         Me.splOverall.Panel2.Controls.Add(Me.splDataOutput)
         Me.splOverall.Size = New System.Drawing.Size(1200, 588)
-        Me.splOverall.SplitterDistance = 219
+        Me.splOverall.SplitterDistance = 217
         Me.splOverall.SplitterWidth = 10
         Me.splOverall.TabIndex = 10
         '
@@ -6123,7 +6131,7 @@ Partial Class frmMain
         '
         Me.splExtraWindows.Panel2.BackColor = System.Drawing.SystemColors.Control
         Me.splExtraWindows.Panel2.Controls.Add(Me.ucrScriptWindow)
-        Me.splExtraWindows.Size = New System.Drawing.Size(1200, 219)
+        Me.splExtraWindows.Size = New System.Drawing.Size(1200, 217)
         Me.splExtraWindows.SplitterDistance = 360
         Me.splExtraWindows.SplitterWidth = 10
         Me.splExtraWindows.TabIndex = 0
@@ -6144,7 +6152,7 @@ Partial Class frmMain
         '
         Me.splMetadata.Panel2.BackColor = System.Drawing.SystemColors.Control
         Me.splMetadata.Panel2.Controls.Add(Me.ucrDataFrameMeta)
-        Me.splMetadata.Size = New System.Drawing.Size(360, 219)
+        Me.splMetadata.Size = New System.Drawing.Size(360, 217)
         Me.splMetadata.SplitterDistance = 90
         Me.splMetadata.SplitterWidth = 10
         Me.splMetadata.TabIndex = 0
@@ -6159,7 +6167,7 @@ Partial Class frmMain
         Me.ucrColumnMeta.Location = New System.Drawing.Point(0, 0)
         Me.ucrColumnMeta.Margin = New System.Windows.Forms.Padding(6, 10, 6, 10)
         Me.ucrColumnMeta.Name = "ucrColumnMeta"
-        Me.ucrColumnMeta.Size = New System.Drawing.Size(90, 219)
+        Me.ucrColumnMeta.Size = New System.Drawing.Size(90, 217)
         Me.ucrColumnMeta.TabIndex = 0
         '
         'ucrDataFrameMeta
@@ -6170,7 +6178,7 @@ Partial Class frmMain
         Me.ucrDataFrameMeta.Location = New System.Drawing.Point(0, 0)
         Me.ucrDataFrameMeta.Margin = New System.Windows.Forms.Padding(6, 10, 6, 10)
         Me.ucrDataFrameMeta.Name = "ucrDataFrameMeta"
-        Me.ucrDataFrameMeta.Size = New System.Drawing.Size(260, 219)
+        Me.ucrDataFrameMeta.Size = New System.Drawing.Size(260, 217)
         Me.ucrDataFrameMeta.TabIndex = 0
         '
         'ucrScriptWindow
@@ -6181,7 +6189,7 @@ Partial Class frmMain
         Me.ucrScriptWindow.Location = New System.Drawing.Point(0, 0)
         Me.ucrScriptWindow.Margin = New System.Windows.Forms.Padding(6, 10, 6, 10)
         Me.ucrScriptWindow.Name = "ucrScriptWindow"
-        Me.ucrScriptWindow.Size = New System.Drawing.Size(830, 219)
+        Me.ucrScriptWindow.Size = New System.Drawing.Size(830, 217)
         Me.ucrScriptWindow.strActiveTabText = ""
         Me.ucrScriptWindow.TabIndex = 2
         Me.ucrScriptWindow.Tag = "Script_Window"
@@ -6203,8 +6211,8 @@ Partial Class frmMain
         '
         Me.splDataOutput.Panel2.BackColor = System.Drawing.SystemColors.Control
         Me.splDataOutput.Panel2.Controls.Add(Me.ucrOutput)
-        Me.splDataOutput.Size = New System.Drawing.Size(1200, 359)
-        Me.splDataOutput.SplitterDistance = 541
+        Me.splDataOutput.Size = New System.Drawing.Size(1200, 361)
+        Me.splDataOutput.SplitterDistance = 540
         Me.splDataOutput.SplitterWidth = 10
         Me.splDataOutput.TabIndex = 0
         '
@@ -6217,7 +6225,7 @@ Partial Class frmMain
         Me.ucrDataViewer.Location = New System.Drawing.Point(0, 0)
         Me.ucrDataViewer.Margin = New System.Windows.Forms.Padding(6, 10, 6, 10)
         Me.ucrDataViewer.Name = "ucrDataViewer"
-        Me.ucrDataViewer.Size = New System.Drawing.Size(541, 359)
+        Me.ucrDataViewer.Size = New System.Drawing.Size(540, 361)
         Me.ucrDataViewer.TabIndex = 0
         Me.ucrDataViewer.Tag = "Data_View"
         '
@@ -6229,7 +6237,7 @@ Partial Class frmMain
         Me.ucrOutput.Location = New System.Drawing.Point(0, 0)
         Me.ucrOutput.Margin = New System.Windows.Forms.Padding(6, 10, 6, 10)
         Me.ucrOutput.Name = "ucrOutput"
-        Me.ucrOutput.Size = New System.Drawing.Size(649, 359)
+        Me.ucrOutput.Size = New System.Drawing.Size(650, 361)
         Me.ucrOutput.TabIndex = 0
         '
         'mnuPlotly
@@ -6969,8 +6977,6 @@ Partial Class frmMain
     Friend WithEvents mnuClimaticExamineEditDataVisualiseData As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator27 As ToolStripSeparator
 
-    Friend WithEvents mnuClimaticPICSAGeneralGrap As ToolStripMenuItem
-
     Friend WithEvents mnuClimaticFileExportToGoogleBucketsToolStrip As ToolStripMenuItem
 
     Friend WithEvents ToolStripSeparator79 As ToolStripSeparator
@@ -7080,5 +7086,9 @@ Partial Class frmMain
 =======
     Friend WithEvents mnuDescribeOneVariableLikertGraphs As ToolStripMenuItem
     Friend WithEvents mnuDescribeTwoThreeVariablesMoreLikert As ToolStripMenuItem
+<<<<<<< HEAD
 >>>>>>> 94bb5de1eb05d577d5daf7a973c20f705fe0ba09
+=======
+    Friend WithEvents InsertColumnRowsToolStripMenuItem As ToolStripMenuItem
+>>>>>>> ff8feaf3406f07bf64c9be2ca8179ca82209ec4f
 End Class
